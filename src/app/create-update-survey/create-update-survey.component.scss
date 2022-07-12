@@ -42,3 +42,19 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+.mat-tab-group {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
