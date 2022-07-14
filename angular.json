@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "4f15be04-af98-4660-a8b3-dce0ba890746"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "miracle": {
+    "survey": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/miracle",
+            "outputPath": "dist/survey",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "miracle:build:production"
+              "browserTarget": "survey:build:production"
             },
             "development": {
-              "browserTarget": "miracle:build:development"
+              "browserTarget": "survey:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "miracle:build"
+            "browserTarget": "survey:build"
           }
         },
         "test": {
@@ -107,5 +110,5 @@
       }
     }
   },
-  "defaultProject": "miracle"
+  "defaultProject": "survey"
 }
