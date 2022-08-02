@@ -1,4 +1,6 @@
-h1 {text-align:center;}
+h1 {
+  text-align: center;
+}
 
 .center {
   display: block;
@@ -7,54 +9,44 @@ h1 {text-align:center;}
   width: 100px;
 }
 
-p { font-size : 25px;
-       text-align :center;
+p {
+  font-size: 25px;
+  text-align: center;
 }
 
-p1{ font-size : 25px;
+p1 {
+  font-size: 25px;
 }
 
-input[type=text] {
-  width: 70%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 50%;
+  margin-left: 11cm;
 }
 
-div {
-  border-radius: 5px;
-  background-color: #ede7f6;
-  padding: 80px;
-  margin-left: 200px;
-  margin-right: 200px;
+.mat-form-field{
+  min-width: 100%;
+}
+.mat-radio-button~.mat-radio-button {
+  margin-left: 2cm;
+  min-width: 10px;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+.example-container .mat-form-field+.mat-form-field {
+  margin-left: 18px;
 }
-.mat-tab-group {
-    margin-top: 70px;
-    margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  section {
-    display: table;
-  }
+.example-button-row button,.example-flex-container,.example-button-container,
+.example-button-row a {
+  align-content: center;
+  display: table-cell;
+  width: 490px;
+  color: black;
+  flex-wrap: wrap;
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
   
-  .example-label {
-    display: table-cell;
-    font-size: 14px;
-    margin-left: 8px;
-    min-width: 120px;
-  }
+  
+}

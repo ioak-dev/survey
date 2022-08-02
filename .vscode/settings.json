@@ -1,5 +1,6 @@
 {
     "git.allowForcePush": true,
     "git.enableCommitSigning": true,
-    "git.fetchOnPull": true
+    "git.fetchOnPull": true,
+    "liveServer.settings.port": 5501
 }
