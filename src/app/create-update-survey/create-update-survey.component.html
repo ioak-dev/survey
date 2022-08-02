@@ -1,0 +1,49 @@
+<div>
+  <img src="C:\Users\win 10\Pictures\Western\favicon.webp" class="center" /><br>
+  <h1 style="text-align: center;">Survey Form</h1><br>
+  <p>Welcome to WesternAcher. Please share your valuable Feedback.</p>
+  <!-- <p1>Enter your details below to start the survey :<p1> -->
+  <br><br>
+  <form class="example-form">
+
+    <div class="example-container">
+      <mat-form-field appearance="fill">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="First Name">
+      </mat-form-field><br>
+
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Last Name</mat-label>
+        <input matInput placeholder="Last Name">
+      </mat-form-field>
+
+
+      <h1 style="text-align: left;">Gender</h1>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Male</mat-radio-button>
+        <mat-radio-button value="2">Female</mat-radio-button>
+      </mat-radio-group><br><br>
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Employe ID</mat-label>
+        <input matInput placeholder="Placeholder">
+      </mat-form-field><br>
+
+
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field><br><br>
+
+
+      <div class="example-button-row">
+        <button mat-button color="accent">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
